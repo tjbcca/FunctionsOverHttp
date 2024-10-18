@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from app.views import hello_name, age, food
 urlpatterns = [
-    path("hello/<name>/", hello_name),
+    path("hey/<name>", hello_name),
     path("age-in/<end>/<birthyear>", age),
     path("order-total/<burgers>/<fries>/<drinks>", food),
     path('admin/', admin.site.urls),

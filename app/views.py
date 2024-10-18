@@ -4,7 +4,7 @@ from django.http import HttpRequest
 
 # Create your views here.
 def hello_name(request, name):
-    return HttpResponse("Hello " + (name.upper()) + "!")
+    return HttpResponse("Hey, " + name + "!")
 def age(request, end, birthyear):
     return HttpResponse(int(end) - int(birthyear))
 def food(request, burgers, fries, drinks):
